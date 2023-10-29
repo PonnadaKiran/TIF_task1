@@ -45,7 +45,7 @@ const Cards = () => {
     } else {
       setTotalPages(Math.ceil(cardData.length / 3));
     }
-  }, [currentPage]);
+  }, [cardData.length,currentPage]);
 
   const incrementPage = () => {
     if (currentPage === totalPages) return;
